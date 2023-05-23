@@ -53,10 +53,10 @@ const Lft = styled.div`
   }
 `
 
-const ButtonBox = styled.div`
-    padding: 20px 0;
-    text-align: right;
-`
+// const ButtonBox = styled.div`
+//     padding: 20px 0;
+//     text-align: right;
+// `
 const TitleBox = styled.div`
   font-family: Helvetica;
   font-size: 16px;
@@ -67,18 +67,18 @@ const TitleBox = styled.div`
   }
 `
 
-const ButtonBG = styled.div`
-  border-radius: 5px;
-  border: 1px solid #000;
-  display: inline-block;
-  padding: 6px 20px;
-  line-height: 32px;
-  cursor: pointer;
-  color:#000;
-  .close{
-    padding-left: 20px;
-  }
-`
+// const ButtonBG = styled.div`
+//   border-radius: 5px;
+//   border: 1px solid #000;
+//   display: inline-block;
+//   padding: 6px 20px;
+//   line-height: 32px;
+//   cursor: pointer;
+//   color:#000;
+//   .close{
+//     padding-left: 20px;
+//   }
+// `
 function App() {
 
   return (
