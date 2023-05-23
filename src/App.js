@@ -97,7 +97,7 @@ function App() {
                                           <div className="imgBox"><img src={LogoImg} alt=""/></div>
                                           <TitleBox>
                                               <div className="tit">RPC</div>
-                                              <div>This list show all your configured chains .</div>
+                                              <div>This list show all your configured chains.</div>
                                           </TitleBox>
                                       </Lft>
                                   </Col>
