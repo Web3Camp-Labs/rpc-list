@@ -5,6 +5,7 @@ import {Container, Row, Col} from 'react-bootstrap';
 import FooterBox from "./layout/footerBox";
 import HeaderTop from "./layout/headTop";
 import List from "./layout/list";
+import LogoImg from "./images/logo.svg";
 
 const MainContent = styled.div`
   display: flex;
@@ -93,7 +94,7 @@ function App() {
                               <Row>
                                   <Col md={6}>
                                       <Lft>
-                                          <div className="imgBox"><img src="./faucet.png" alt=""/></div>
+                                          <div className="imgBox"><img src={LogoImg} alt=""/></div>
                                           <TitleBox>
                                               <div className="tit">RPC</div>
                                               <div>This list show all your configured chains .</div>
