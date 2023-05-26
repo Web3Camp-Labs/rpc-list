@@ -145,7 +145,6 @@ export default function List(){
     useEffect(()=>{
         let arr = ChainList.sort(compareDESC);
         const aftArr = arr.filter(item=>item.rpc.length)
-        console.log(arr.length,aftArr.length)
 
         setList(aftArr)
 
