@@ -144,7 +144,10 @@ export default function List(){
 
     useEffect(()=>{
         let arr = ChainList.sort(compareDESC);
-        setList(arr)
+        const aftArr = arr.filter(item=>item.rpc.length)
+        console.log(arr.length,aftArr.length)
+
+        setList(aftArr)
 
     },[])
 
@@ -166,11 +169,13 @@ export default function List(){
 
         if(!keyword.length){
             let arrAft = ChainList.sort(compareDESC);
-            setList(arrAft)
+            const aftArr = arrAft.filter(item=>item.rpc.length)
+            setList(aftArr)
         }else{
             const arr = ChainList.filter((item)=>item.name.toLowerCase().indexOf(keyword.toLowerCase()) > -1);
             let arrAft = arr.sort(compareDESC );
-            setList(arrAft)
+            const aftArr = arrAft.filter(item=>item.rpc.length)
+            setList(aftArr)
         }
 
     },[keyword])
@@ -194,7 +199,6 @@ export default function List(){
     const formatImg = (num) =>{
         const rt = ImageArr.filter((item)=>item.split(".")[0] === num?.toString() )
         if(rt.length){
-            console.log(rt[0])
             return require(`../icons/${rt[0]}`)
         }else{
             return require("../icons/eth.png");
